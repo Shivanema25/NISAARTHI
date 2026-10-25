@@ -1,0 +1,58 @@
+[
+  {
+    "id": "serv-ngp-001",
+    "name": "Government Medical College & Hospital (GMCH) Trauma Center",
+    "service_type": "Hospital & 24/7 Emergency Casualty",
+    "address": "Medical Square, Hanuman Nagar, Nagpur, Maharashtra 440003",
+    "location_desc": "Tertiary public hospital with 24-hour emergency casualty, trauma care, and blood bank",
+    "published_hours": "24 Hours (Open Daily)",
+    "verified_open_now": null,
+    "evidence_status": "PROBABLE",
+    "data_origin": "SEEDED",
+    "source": "Nagpur Municipal Corporation Civic Health Directory",
+    "freshness_reason": "Published institutional directory record. Live real-time emergency triage load is not connected in Phase 1.",
+    "limitations": "Seeded demonstration record. Live operational capacity or bed availability is unverified."
+  },
+  {
+    "id": "serv-ngp-002",
+    "name": "Apollo 24/7 Pharmacy Dharampeth",
+    "service_type": "24/7 Pharmacy & First Aid",
+    "address": "West High Court Road, Dharampeth, Nagpur, Maharashtra 440010",
+    "location_desc": "Commercial round-the-clock retail pharmacy with prescription and nocturnal first-aid stock",
+    "published_hours": "24 Hours",
+    "verified_open_now": null,
+    "evidence_status": "PROBABLE",
+    "data_origin": "SEEDED",
+    "source": "Published Retail Store Hours (Demonstration Seed)",
+    "freshness_reason": "Published commercial schedule without real-time pharmacist on-duty telemetry.",
+    "limitations": "Seeded demonstration record. In emergency situations, telephone confirmation is recommended."
+  },
+  {
+    "id": "serv-ngp-003",
+    "name": "Sitabuldi Police Station - Nocturnal Assistance Booth",
+    "service_type": "Police & Nocturnal Safety Station",
+    "address": "Near Munje Square, Sitabuldi, Nagpur, Maharashtra 440012",
+    "location_desc": "Manned 24-hour nocturnal assistance desk and emergency transit patrol post",
+    "published_hours": "24 Hours Manned Post",
+    "verified_open_now": null,
+    "evidence_status": "PROBABLE",
+    "data_origin": "SEEDED",
+    "source": "Nagpur City Police Civic Directory",
+    "freshness_reason": "Published public station listing. Active patrol unit coordinates are not tracked in Phase 1.",
+    "limitations": "Seeded demonstration record. For active emergencies, immediately dial 112."
+  },
+  {
+    "id": "serv-ngp-004",
+    "name": "Nagpur Central Railway Station 24/7 Jan Aushadhi & First Aid",
+    "service_type": "Transit Health & Pharmacy",
+    "address": "Platform 1 Concourse, Nagpur Junction, Station Road, Nagpur 440001",
+    "location_desc": "24-hour generic medicine and immediate traveler first-aid facility",
+    "published_hours": "24 Hours",
+    "verified_open_now": null,
+    "evidence_status": "PROBABLE",
+    "data_origin": "SEEDED",
+    "source": "Indian Railways Station Amenities Schedule",
+    "freshness_reason": "Published station amenities schedule. Static timetable without live staffing telemetry.",
+    "limitations": "Seeded demonstration record. Requires platform concourse access."
+  }
+]

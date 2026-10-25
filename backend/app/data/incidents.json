@@ -1,0 +1,26 @@
+[
+  {
+    "id": "inc-ngp-001",
+    "title": "Ajni Flyover / Wardha Road Maintenance (Demonstration Scenario)",
+    "affected_corridor": "Ajni Square / Wardha Road Flyover",
+    "active_hours": "23:00-05:00",
+    "closure_type": "FULL_CLOSURE",
+    "source": "demonstration_bulletin",
+    "status": "PROBABLE",
+    "data_age_minutes": null,
+    "data_origin": "SEEDED",
+    "reason": "Synthetic demonstration constraint defined for nocturnal maintenance scenario. Unverified against real-world Nagpur road operations."
+  },
+  {
+    "id": "safe-ngp-001",
+    "title": "Outer Ring Road Nocturnal Safety Telemetry",
+    "affected_corridor": "Hingna Road Outer Arterial",
+    "active_hours": "00:00-23:59",
+    "closure_type": "MISSING_EVIDENCE",
+    "source": "missing_report",
+    "status": "UNKNOWN",
+    "data_age_minutes": null,
+    "data_origin": "SEEDED",
+    "reason": "No verified nocturnal safety telemetry. Absence of incident reports does NOT imply safety."
+  }
+]

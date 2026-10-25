@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.health import router as health_router
+from app.routes.plan import router as plan_router
+from app.routes.services import router as services_router
+from app.routes.status import router as status_router
 
 app = FastAPI(
     title="Nisaarthi API",
@@ -19,3 +22,6 @@ app.add_middleware(
 
 # Include routes
 app.include_router(health_router)
+app.include_router(plan_router)
+app.include_router(services_router)
+app.include_router(status_router)

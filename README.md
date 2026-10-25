@@ -139,3 +139,17 @@ The frontend will be available at: `http://localhost:5173`
    cd backend
    .venv\Scripts\pytest
    ```
+
+---
+
+## 10. Development Roadmap
+
+- **Phase 0 — Project scaffold**: Complete: FastAPI health endpoint, React + Vite scaffold, configuration and Git setup.
+- **Phase 1 — Core engine and mid-evaluation UI**: Current phase: deterministic planning, seeded data, Data Trust Engine, required API endpoints and a functional initial frontend.
+- **Phase 2 — Real data, caching and resilience**: Integrate available routing, weather, transit and essential-service sources. Introduce SQLite cache and degraded-connectivity handling.
+- **Phase 3 — Frontend enhancement**: Add the interactive map, richer route details, advanced evidence views and improved visual polish using the established backend API.
+- **Phase 4 — Provider foundation**: Verify current official Nebius and Tavily documentation, then implement isolated provider adapters.
+- **Phase 5 — Evidence retrieval and AI assistance**: Introduce Tavily evidence retrieval and Nebius-based language processing, strictly non-authoritative for safety and feasibility.
+- **Phase 6 — Evidence fusion**: Integrate retrieved evidence into the existing deterministic Data Trust Engine.
+- **Phase 7 — Evidence and degraded-mode UI**: Improve evidence presentation and provider-failure controls.
+- **Phase 8 — Regression testing and demo hardening**: Test end-to-end behavior, failure scenarios, production build and demonstration flow.

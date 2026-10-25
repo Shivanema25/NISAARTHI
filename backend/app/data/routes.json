@@ -1,0 +1,361 @@
+[
+  {
+    "route_id": "route_aapli_night_feeder",
+    "route_name": "Aapli Night Bus Feeder (Route N-10)",
+    "origin": "Sitabuldi Interchange",
+    "destination": "Dharampeth Extension",
+    "walking_time": 10,
+    "waiting_time": 5,
+    "transport_time": 15,
+    "transfer_time": 0,
+    "legs": [
+      {
+        "mode": "walk",
+        "instruction": "Walk from Sitabuldi Interchange to Munje Square Night Bus Bay",
+        "from_name": "Sitabuldi Interchange",
+        "to_name": "Munje Square Bus Bay",
+        "duration_minutes": 6,
+        "distance_meters": 500,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "wait",
+        "instruction": "Wait at Munje Square Bay for scheduled Aapli Night Bus N-10",
+        "from_name": "Munje Square Bus Bay",
+        "to_name": "Munje Square Bus Bay",
+        "duration_minutes": 5,
+        "distance_meters": 0,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "bus",
+        "instruction": "Board Aapli Night Bus N-10 towards Dharampeth via Variety Square",
+        "from_name": "Munje Square Bus Bay",
+        "to_name": "Dharampeth WHC Road Stop",
+        "duration_minutes": 15,
+        "distance_meters": 3200,
+        "transit_line": "Aapli Night Bus N-10",
+        "transit_operating_hours": "23:00-05:00",
+        "constraints": []
+      },
+      {
+        "mode": "walk",
+        "instruction": "Walk from bus stop to Dharampeth destination",
+        "from_name": "Dharampeth WHC Road Stop",
+        "to_name": "Dharampeth Extension",
+        "duration_minutes": 4,
+        "distance_meters": 300,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      }
+    ],
+    "transit_mode": "bus",
+    "transit_line": "Aapli Night Bus N-10",
+    "transit_operating_hours": "23:00-05:00",
+    "affected_corridors": ["Variety Square", "West High Court Road"],
+    "evidence_items": [
+      {
+        "subject": "Bus Schedule",
+        "fact_type": "transit_schedule",
+        "value": "30-minute nocturnal frequency (23:00-05:00)",
+        "source": "published_schedule",
+        "data_age_minutes": null,
+        "is_direct_evidence": false
+      },
+      {
+        "subject": "Demonstration Corridor Lighting",
+        "fact_type": "street_lighting",
+        "value": "Commercial lighting along WHC Road configured in scenario model",
+        "source": "demonstration_scenario",
+        "data_age_minutes": null,
+        "is_direct_evidence": false
+      }
+    ]
+  },
+  {
+    "route_id": "route_detour_auto_corridor",
+    "route_name": "Direct Lit Corridor + On-Demand Auto",
+    "origin": "Sitabuldi Interchange",
+    "destination": "Dharampeth Extension",
+    "walking_time": 7,
+    "waiting_time": 3,
+    "transport_time": 14,
+    "transfer_time": 0,
+    "legs": [
+      {
+        "mode": "walk",
+        "instruction": "Walk to 24/7 Manned Prepaid Auto Booth at Munje Square",
+        "from_name": "Sitabuldi Interchange",
+        "to_name": "Munje Square Auto Stand",
+        "duration_minutes": 4,
+        "distance_meters": 350,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "wait",
+        "instruction": "Prepaid auto queue and dispatch buffer",
+        "from_name": "Munje Square Auto Stand",
+        "to_name": "Munje Square Auto Stand",
+        "duration_minutes": 3,
+        "distance_meters": 0,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "auto",
+        "instruction": "Prepaid Autorickshaw via North Ambazari Road",
+        "from_name": "Munje Square Auto Stand",
+        "to_name": "Dharampeth Extension Hub",
+        "duration_minutes": 14,
+        "distance_meters": 3800,
+        "transit_line": "Prepaid Auto",
+        "transit_operating_hours": "00:00-23:59",
+        "constraints": ["24/7 on-demand service"]
+      },
+      {
+        "mode": "walk",
+        "instruction": "Walk to final destination",
+        "from_name": "Dharampeth Extension Hub",
+        "to_name": "Dharampeth Extension",
+        "duration_minutes": 3,
+        "distance_meters": 200,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      }
+    ],
+    "transit_mode": "auto",
+    "transit_line": "Prepaid Auto",
+    "transit_operating_hours": "00:00-23:59",
+    "affected_corridors": ["North Ambazari Road", "Ramdaspeth"],
+    "evidence_items": [
+      {
+        "subject": "Prepaid Auto Stand Availability",
+        "fact_type": "transit_availability",
+        "value": "24/7 manned booth configured in scenario model",
+        "source": "demonstration_scenario",
+        "data_age_minutes": null,
+        "is_direct_evidence": false
+      }
+    ]
+  },
+  {
+    "route_id": "route_metro_orange_line",
+    "route_name": "Nagpur Metro Orange Line Express + Feeder Walk",
+    "origin": "Sitabuldi Interchange",
+    "destination": "Khapri / MIHAN",
+    "walking_time": 11,
+    "waiting_time": 4,
+    "transport_time": 18,
+    "transfer_time": 0,
+    "legs": [
+      {
+        "mode": "walk",
+        "instruction": "Enter Sitabuldi Metro Interchange Concourse",
+        "from_name": "Sitabuldi Interchange",
+        "to_name": "Sitabuldi Metro Station Platform",
+        "duration_minutes": 5,
+        "distance_meters": 350,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "wait",
+        "instruction": "Wait on Platform 1 for Orange Line train",
+        "from_name": "Sitabuldi Metro Station Platform",
+        "to_name": "Sitabuldi Metro Station Platform",
+        "duration_minutes": 4,
+        "distance_meters": 0,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "metro",
+        "instruction": "Board Orange Line Metro towards Khapri",
+        "from_name": "Sitabuldi Metro Station Platform",
+        "to_name": "Khapri Metro Station",
+        "duration_minutes": 18,
+        "distance_meters": 11500,
+        "transit_line": "Nagpur Metro Orange Line",
+        "transit_operating_hours": "06:00-22:30",
+        "constraints": ["Daytime and evening operation only (06:00-22:30)"]
+      },
+      {
+        "mode": "walk",
+        "instruction": "Exit station to MIHAN IT corridor feeder point",
+        "from_name": "Khapri Metro Station",
+        "to_name": "Khapri / MIHAN",
+        "duration_minutes": 6,
+        "distance_meters": 450,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      }
+    ],
+    "transit_mode": "metro",
+    "transit_line": "Nagpur Metro Orange Line",
+    "transit_operating_hours": "06:00-22:30",
+    "affected_corridors": ["Wardha Road Elevated Corridor"],
+    "evidence_items": [
+      {
+        "subject": "Metro Operating Hours",
+        "fact_type": "transit_schedule",
+        "value": "Nagpur Metro operates 06:00 to 22:30 only",
+        "source": "published_schedule",
+        "data_age_minutes": null,
+        "is_direct_evidence": false
+      }
+    ]
+  },
+  {
+    "route_id": "route_wardha_road_express",
+    "route_name": "Wardha Road Express Shuttle",
+    "origin": "Sitabuldi Interchange",
+    "destination": "Airport South & MIHAN",
+    "walking_time": 10,
+    "waiting_time": 5,
+    "transport_time": 20,
+    "transfer_time": 0,
+    "legs": [
+      {
+        "mode": "walk",
+        "instruction": "Walk to Rahate Colony transit stop",
+        "from_name": "Sitabuldi Interchange",
+        "to_name": "Rahate Colony Stop",
+        "duration_minutes": 6,
+        "distance_meters": 450,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "wait",
+        "instruction": "Wait for Wardha Road Night Express arrival",
+        "from_name": "Rahate Colony Stop",
+        "to_name": "Rahate Colony Stop",
+        "duration_minutes": 5,
+        "distance_meters": 0,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "bus",
+        "instruction": "Board Wardha Road Express via Ajni Flyover",
+        "from_name": "Rahate Colony Stop",
+        "to_name": "Airport South Transit Hub",
+        "duration_minutes": 20,
+        "distance_meters": 8200,
+        "transit_line": "Wardha Road Express",
+        "transit_operating_hours": "22:00-05:00",
+        "corridor": "Ajni Square / Wardha Road Flyover",
+        "constraints": ["Traverses Ajni Square / Wardha Road Flyover"]
+      },
+      {
+        "mode": "walk",
+        "instruction": "Walk from transit hub to Airport South facility",
+        "from_name": "Airport South Transit Hub",
+        "to_name": "Airport South & MIHAN",
+        "duration_minutes": 4,
+        "distance_meters": 300,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      }
+    ],
+    "transit_mode": "bus",
+    "transit_line": "Wardha Road Express",
+    "transit_operating_hours": "22:00-05:00",
+    "affected_corridors": ["Ajni Square / Wardha Road Flyover"],
+    "evidence_items": [
+      {
+        "subject": "Wardha Road Express Timetable",
+        "fact_type": "transit_schedule",
+        "value": "20-minute night shuttle frequency",
+        "source": "published_schedule",
+        "data_age_minutes": null,
+        "is_direct_evidence": false
+      }
+    ]
+  },
+  {
+    "route_id": "route_cross_city_slow",
+    "route_name": "Hingna Road Nocturnal Perimeter Transit",
+    "origin": "Sitabuldi Interchange",
+    "destination": "Hingna Industrial Area",
+    "walking_time": 20,
+    "waiting_time": 15,
+    "transport_time": 35,
+    "transfer_time": 0,
+    "legs": [
+      {
+        "mode": "walk",
+        "instruction": "Walk to Mor Bhavan Bus Terminus",
+        "from_name": "Sitabuldi Interchange",
+        "to_name": "Mor Bhavan Bus Terminus",
+        "duration_minutes": 12,
+        "distance_meters": 950,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": []
+      },
+      {
+        "mode": "wait",
+        "instruction": "Wait for Hingna Perimeter Night Bus",
+        "from_name": "Mor Bhavan Bus Terminus",
+        "to_name": "Mor Bhavan Bus Terminus",
+        "duration_minutes": 15,
+        "distance_meters": 0,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": ["60-minute nocturnal frequency"]
+      },
+      {
+        "mode": "bus",
+        "instruction": "Board Hingna Perimeter Bus to Electronic Zone",
+        "from_name": "Mor Bhavan Bus Terminus",
+        "to_name": "Electronic Zone Stop Hingna",
+        "duration_minutes": 35,
+        "distance_meters": 13800,
+        "transit_line": "Hingna Perimeter Service",
+        "transit_operating_hours": "23:30-05:00",
+        "constraints": ["Low nocturnal service frequency"]
+      },
+      {
+        "mode": "walk",
+        "instruction": "Walk to industrial facility",
+        "from_name": "Electronic Zone Stop Hingna",
+        "to_name": "Hingna Industrial Area",
+        "duration_minutes": 8,
+        "distance_meters": 650,
+        "transit_line": null,
+        "transit_operating_hours": null,
+        "constraints": ["Low illumination on perimeter access road"]
+      }
+    ],
+    "transit_mode": "bus",
+    "transit_line": "Hingna Perimeter Service",
+    "transit_operating_hours": "23:30-05:00",
+    "affected_corridors": ["Hingna Road Outer Arterial"],
+    "evidence_items": [
+      {
+        "subject": "Perimeter Safety Telemetry",
+        "fact_type": "safety_telemetry",
+        "value": "No active telemetry feeds",
+        "source": "missing_report",
+        "data_age_minutes": null,
+        "is_safety_evidence": true
+      }
+    ]
+  }
+]
